@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code X Website</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class="logo" href="index.html">Happy<span>Paws</span></a>
+
+            <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Open Navigation">
+
+            <nav>
+                <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navigation">
+
+                <ul class="primary-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="about_us.html">About us</a></li>
+                    <li><a href="paw_tracker.html">Paw Tracker</a></li>
+                    <li><a href="pet_vet.html">Pet Vets</a></li>
+                    <li><a href="pet_pals.html">Pet Pals</a></li>
+                </ul>
+
+                <ul class="secondary-nav">
+                    <li><a href="log_sign.html">Login</a></li>
+                    <li class="sign-up-cta"><a href="log_sign.html">Sign Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="container">
+            <div class="left-col">
+                <p class="subhead">It's User-Friendly &amp; Easy to Use </p>
+                <h1>A Fun and Interactive Way to make your Pet's life Amazing!</h1>
+
+                <div class="hero-cta">
+                    <a href="log_sign.html" class="primary-cta">Sign Up Now!</a>
+                </div>
+            </div>
+
+            <img src="images/logo.jpg" class="hero-img" alt="logo">
+            <!--If wanted illustration can be added-->
+        </div>
+    </section>
+
+    <section class="features-section">
+        <div class="container">
+            <ul class="features-list">
+                <li>Find Your Pet Through GPS trackers</li>
+                <li>Make your Pet new friends</li>
+                <li>Keep your pet's health in check</li>
+                <li>Maintain your pet's official portfolio</li>
+                <li>Be content about your pet's safety</li>
+                <li>Make life Easy!</li>
+            </ul>
+
+            <!-- Add image of a happy doggo -->
+        </div>
+    </section>
+
+    <section class="testimonials-section">
+        <div class="container">
+            <ul>
+                <li>
+                    <img src="images/genericpfp.jpg" alt="Person">
+
+                    <blockquote>"I absolutley loved the idea and website. It became really easy for me to organize my
+                        dog's life
+                        and make him new friends"</blockquote>
+                </li>
+                <li>
+                    <img src="images/genericpfp.jpg" alt="Person">
+
+                    <blockquote>"One time my dog got lost, with the help of happy paws i was easily able to track him "
+                    </blockquote>
+                </li>
+                <li>
+                    <img src="images/genericpfp.jpg" alt="Person">
+
+                    <blockquote>"It is a simple and sophisticated website, it helped me plan my cat's appointments and
+                        helped her make friends"</blockquote>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+
+                <form action="">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name">
+
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+                    <input type="submit" class="send-message-cta" value="Send message">
+                    <form accept-charset="UTF-8" action="https://www.formbackend.com/f/89ba7e1be07c7376" method="POST">
+                    </form>
+                </form>
+            </div>
+            <div class="contact-right">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14441.076169907985!2d55.2692716820604!3d25.19414790885899!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f682f700cf983%3A0xb5cc58b076c0b904!2sDowntown%20Dubai%20-%20Dubai!5e0!3m2!1sen!2sae!4v1643646633998!5m2!1sen!2sae"
+                    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+
+        const mobileBtn = document.getElementById('mobile-cta')
+        nav = document.querySelector('nav')
+        mobileBtnExit = document.getElementById('mobile-exit');
+
+        mobileBtn.addEventListener('click', () => {
+            nav.classList.add('menu-btn');
+        })
+
+        mobileBtnExit.addEventListener('click', () => {
+            nav.classList.remove('menu-btn');
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>
